@@ -7,8 +7,22 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Product-Sans';
+    src: url("/fonts/ProductSans400.ttf") format("truetype");
+    font-weight:400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Product-Sans';
+    src: url("/fonts/ProductSansBold700.ttf") format("truetype");
+    font-weight:700;
+    font-style: normal;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Product-Sans';
     font-size: 16px;
     font-weight: 400;
 }

@@ -1,8 +1,8 @@
 .we-worked {
     .slick-dots {
-        bottom: -50px;
+        bottom: -35px;
         font-size: 15px;
-        margin-bottom: -30px;
+        
         li {
             width: 25px;
             height: 25px;
@@ -13,7 +13,7 @@
     }
 
     .slick-prev {
-        top: 55%;
+        top: 45%;
         left: -50px;
         &:before {
             content: "";
@@ -34,7 +34,7 @@
         }
     }
     .slick-next {
-        top: 55%;
+        top: 45%;
         right: -50px;
         &:before {
             content: "";
