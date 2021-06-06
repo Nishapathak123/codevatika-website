@@ -114,11 +114,13 @@ footer {
                 padding-bottom: 20px;
             }
             .connected{
+                a{
                 color: $color-white;
                 i{
                     font-size: 25px;
                     margin-right: 15px;
                 }
+            }
             }
         }
     }
