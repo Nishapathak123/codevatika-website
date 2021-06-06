@@ -1,0 +1,151 @@
+.we-are  {
+   .wrapper{
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: repeat(2,60% 40%);
+      .we-are-text{
+         padding: 0 60px 0 0;
+         h1{
+            color: $color-green;
+         }
+         p{
+            padding: 10px 0;
+            color: $color-light-black;
+         }
+      }
+      .we-are-images{
+         display: block;
+         width: 100%;
+      }
+   }
+   
+}
+.mission{
+   padding: 0 0 30px 0;
+   .wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      .our-mission{
+         padding-left: 20px;
+         h1{
+            color: $color-dark-brown;
+         }
+         .text5{
+            padding-right: 10px;
+            color: $color-light-black;
+         }
+      }
+      .quality{
+         display: flex;
+         padding: 20px 15px;
+         box-shadow: 0px 5px 10px rgba(0,0,0,.1);
+         &:hover{
+            box-shadow: 0px 5px 10px rgba(0,0,0,.3);
+            background: $color-green;
+            transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            .our-mission{
+               
+               h1,.text5{
+                  color: $color-white;
+               }
+              
+            }
+            .icon{
+            .icon-color{
+
+           
+               background: $color-white;
+               width: 60px;
+               height: 60px;
+               border-radius: 50%;
+                  i{
+                     color: $color-green;
+                     font-size: 30px;
+                     position: relative;
+                     bottom: 23px;
+                     left: 17px;
+                   
+            
+               }
+            }
+         }
+      }
+         .icon{
+           
+            
+            .icon-color{
+               width: 70px;
+               background: $color-green;
+               height: 70px;
+               border-radius: 50%;
+
+               i{
+                  font-size: 30px;
+                  position: relative;
+                  bottom: 20px;
+                  left: 20px;
+                  color: $color-white;
+               }
+            }
+         }
+      }
+   }
+}
+.why-choose{
+   .icon{
+      padding-right: 10px;
+      .icon-co{
+         width: 80px;
+         height: 80px;
+         background: $color-light-green;
+         i{
+            font-size: 40px;
+            position: relative;
+            bottom: 13px;
+            color: $color-white;
+            left: 21px;
+         }
+      }
+   }
+}
+.why-choose{
+   padding: 40px 0;
+   .wrapper{
+      padding: 20px 0;
+      .why-choose-text{
+         text-align: center;
+         padding-bottom: 20px;
+         h2{
+            color: $color-dark-brown;
+         }
+      }
+      .changer{
+         padding-left: 20px;
+         h1{
+            color: $color-green;
+         }
+         p{
+            color: $color-light-black;
+            
+            padding-bottom: 15px;
+         }
+      }
+      .chooes{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         padding-top: 30px;
+
+         .chooses-us{
+            display: flex;
+            border-right: 1px solid $color-light-green;
+            padding-right: 64px;
+         }
+               
+            .chooses-right{
+               display: flex;
+               padding-left: 75px;
+            }
+         }
+      }
+   }

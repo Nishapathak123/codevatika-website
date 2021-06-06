@@ -1,0 +1,156 @@
+.contact-us {
+    padding: 50px 0;
+    .wrapper {
+        .contacts {
+            text-align: center;
+            padding-bottom: 60px;
+            h2 {
+                color: $color-dark-brown;
+            }
+            .text3 {
+                color: $color-light-black;
+            }
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: auto;
+            .contact-infoos {
+                padding: 40px;
+                .contact-touch {
+                    padding-bottom: 40px;
+                    
+                    h1 {
+                        color: $color-dark-brown;
+                    }
+                    .text5 {
+                        padding: 10px 0;
+                        font-weight: 600;
+                        color: $color-light-black;
+                        span {
+                            padding-right: 5px;
+                        }
+
+                        .band {
+                            color: $color-light-green;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                   
+                    a {
+                        color: $color-dark-brown;
+                        font-size: 16px;
+                        font-weight: 600;
+                      
+                        
+                    }
+                }
+            }
+
+            .contact-form {
+                padding: 40px;
+                background: #5cbb47;
+
+                h1 {
+                    color: $color-white;
+                    padding-bottom: 20px;
+                }
+                .types {
+                    width: 100%;
+                }
+
+                .form-grp {
+                    padding-bottom: 20px;
+                    width: 100%;
+                    ::placeholder {
+                        color: #fff;
+                    }
+                    textarea, input{
+                        border: none;
+                        color: $color-white;
+                        font-size: 14px;
+                        width: 100%;
+                        margin: 5px 10px;
+                        max-width: 100%;
+                        padding: 10px;
+                        box-shadow: none;
+                        font-weight: 700;
+                        background: 0 0;
+                        border-bottom: 2px solid rgba(255, 255, 255, .2);
+                        outline: none;
+                       
+                        &:focus {
+                            border-bottom: 2px solid #fff; 
+
+                        }
+                        
+                    }
+                    
+                    button {
+                        border: none;
+                        font-size: 14px;
+                        width: 100%;
+                        margin: 5px 10px;
+                        max-width: 100%;
+                        padding: 15px 0;
+                        color: #fff;
+                        box-shadow: none;
+                        font-weight: 700;
+                        background: $color-light-green;
+                        border-bottom: 2px solid rgba(255, 255, 255, .2);
+                        outline: none;
+                       
+                        &:focus {
+                            border-bottom: 2px solid #fff;               
+                        }
+                        &:hover{
+                            background: white;
+                            color: $color-green;
+                        }
+                       
+                    } //end of input
+                }
+                    .form-dir {
+                        max-width: 100%;
+                        padding-bottom: 20px;
+                        ::placeholder {
+                            color: #fff;
+                        }
+                        input{
+                     display: inline-block;
+                        border: none;
+                        height: 40px;
+                        font-size: 14px;
+                        width: 44%;
+                        margin: 5px 10px;
+                        max-width: 100%;
+                        padding: 10px;
+                        color: $color-white;
+                        box-shadow: none;
+                        font-weight: 700;
+                        background: 0 0;
+                        border-bottom: 2px solid rgba(255, 255, 255, .2);
+                        outline: none;
+                        
+
+                        &:focus {
+                            border-bottom: 2px solid #fff;               
+                        }
+                      
+                          
+                    
+                        }
+                        
+                    }
+                } //end of form
+                
+            }
+        }
+    }
+
+
+ 

@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        max-width: 420px;
+        padding: 0 15px;
+    }
+
+    // .search-icon svg path {
+    //     fill : #70C919;
+    //     &:hover {
+    //         fill:  #fff;
+    //     }
+    // }
+}

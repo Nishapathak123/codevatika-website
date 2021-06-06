@@ -1,0 +1,133 @@
+footer {
+    background: $color-dark-brown;
+    padding: 60px 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        @include media(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include media(xs) {
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+        .logo-image {
+            img {
+                display: block;
+            }
+            .text5 {
+                padding: 20px 10px 20px 0;
+                color: $color-light-white;
+            }
+            .btn-sm {
+                padding: 13px 25px;
+                font-size: 10px;
+            }
+        }
+        .services-links {
+            padding-left: 60px;
+            @include media(xs) {
+               padding-left: 0;
+            }
+            h1 {
+                color: $color-green;
+            }
+            ul {
+                padding: 10px 0;
+                a {
+                    color: $color-light-white;
+                    cursor: pointer;
+                }
+            }
+        }
+        .con-information {
+            h1 {
+                color: $color-green;
+            }
+
+            .infos {
+                .contact-info {
+                    a {
+                        color: $color-light-white;
+                        display: block;
+                        padding: 10px 0;
+                        i {
+                            margin-right: 10px;
+                            color: $color-light-green;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-images {
+            
+            h1 {
+                color: $color-green;
+            }
+            form {
+                padding: 10px 0;
+                width: 100%;
+                display: flex;
+                @include media(md) {
+                    display: block;
+                    width: 100%;
+                    
+                }
+
+                input {
+                    width: 100%;
+                    display: inline-block;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    margin-right: 20px;
+                }
+                button {
+                    padding: 15px 40px;
+                    border-radius: 5px;
+                    background: $color-green;
+                    outline: none;
+                    border: none;
+                    color: $color-white;
+                    @include media(md) {
+                        margin-top: 20px;
+                        width: 100%;
+                    }
+                    @include media(xs) {
+                       width: 100%;
+                       margin-top: 20px;
+                    }
+                    &:hover {
+                        background: $color-light-green;
+                        transition: 0.2s;
+                    }
+                }
+            } //end of form
+        }
+        .let-connect{
+           
+            h1{
+                color: $color-green;
+                padding-bottom: 20px;
+            }
+            .connected{
+                color: $color-white;
+                i{
+                    font-size: 25px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+.bottom{
+    padding: 10px 0;
+    background: $color-grey;
+    text-align: center;
+    .text4{
+        color: $color-white;
+    }
+}
