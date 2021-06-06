@@ -905,6 +905,9 @@ img {
   list-style: none;
   padding: 20px 15px;
   cursor: pointer; }
+  @media (max-width: 767px) {
+    .container_menu_iso .menu_iso li {
+      cursor: none; } }
 
 @media screen and (max-width: 600px) {
   .container_menu_iso .menu_iso li {

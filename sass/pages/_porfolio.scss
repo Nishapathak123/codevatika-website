@@ -17,6 +17,10 @@
     list-style: none;
     padding: 20px 15px;
     cursor: pointer;
+
+    @include media(sm) {
+      cursor: none;
+    }
   }
   //  .is-checked{
   //   background: $color-green;
