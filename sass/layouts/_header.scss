@@ -232,34 +232,30 @@
 //     visibility: visible;
 // }
 .navigation{
-    
-    
-        .nav-top{
-            background: $color-light-green;
-            padding: 10px 0;
-            .wrapper{
-                max-width: 1100px;
-        .bands{
-             text-align: right;
-             a{
-                 padding: 0 10px;
-                 color: $color-white;
-                 font-size: 15px;
+    background: url('../images/b1.png');
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;  
+        
 
-                 i{
-                    margin-right: 10px;
-                    // color: $color-green;
-                 }
-             }
-            }
-        }
-    }
+                
+            
+        
+    
     .navbar{
         padding: 15px 0;
         box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
-        .wrapper{
-            display: flex;
-            justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 12vh;
+        border-bottom: 1px solid rgba(255,255,255,.13);
+        transition: .5s;
+       
+        
             .logo{
                 cursor: pointer;
                 img{
@@ -285,4 +281,6 @@
            }
         }
     }
+.navbar.sticky{
+    background: $color-white;
 }

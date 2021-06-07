@@ -84,41 +84,42 @@ p {
   .wrapper {
     max-width: 420px;
     padding: 0 15px; } }
-.navigation .nav-top {
-  background: #6ddd54;
-  padding: 10px 0; }
-  .navigation .nav-top .wrapper {
-    max-width: 1100px; }
-    .navigation .nav-top .wrapper .bands {
-      text-align: right; }
-      .navigation .nav-top .wrapper .bands a {
-        padding: 0 10px;
-        color: #fff;
-        font-size: 15px; }
-        .navigation .nav-top .wrapper .bands a i {
-          margin-right: 10px; }
-.navigation .navbar {
-  padding: 15px 0;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
-  .navigation .navbar .wrapper {
+.navigation {
+  background: url("../images/b1.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  .navigation .navbar {
+    padding: 15px 0;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
     display: flex;
-    justify-content: space-between; }
-    .navigation .navbar .wrapper .logo {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 12vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    transition: .5s; }
+    .navigation .navbar .logo {
       cursor: pointer; }
-      .navigation .navbar .wrapper .logo img {
+      .navigation .navbar .logo img {
         display: block; }
-    .navigation .navbar .wrapper .links-items {
+    .navigation .navbar .links-items {
       display: flex;
       align-items: center; }
-      .navigation .navbar .wrapper .links-items .links {
+      .navigation .navbar .links-items .links {
         margin: 0 15px; }
-        .navigation .navbar .wrapper .links-items .links .items {
+        .navigation .navbar .links-items .links .items {
           cursor: pointer;
           color: #141414;
           font-size: 16px;
           font-weight: 500; }
-          .navigation .navbar .wrapper .links-items .links .items:hover {
+          .navigation .navbar .links-items .links .items:hover {
             color: #6ddd54; }
+
+.navbar.sticky {
+  background: #fff; }
 
 footer {
   background: #707070;
