@@ -90,7 +90,7 @@ p {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -674,6 +674,16 @@ img {
   color: #ff8159;
   font-size: 24px; }
 
+.about-us-page .navigation .navbar {
+  position: unset; }
+  .about-us-page .navigation .navbar .links-items .links .items {
+    color: #707070; }
+
+.about-us-page .navigation .navbar.sticky {
+  position: fixed; }
+  .about-us-page .navigation .navbar.sticky .links-items .links .items {
+    color: #000; }
+
 .we-are .wrapper {
   padding: 60px 0;
   display: grid;
@@ -776,6 +786,16 @@ img {
         display: flex;
         padding-left: 75px; }
 
+.services-page .navigation .navbar {
+  position: unset; }
+  .services-page .navigation .navbar .links-items .links .items {
+    color: #707070; }
+
+.services-page .navigation .navbar.sticky {
+  position: fixed; }
+  .services-page .navigation .navbar.sticky .links-items .links .items {
+    color: #000; }
+
 .services-info .wrapper {
   padding-top: 60px; }
   .services-info .wrapper .infoos h2 {
@@ -818,6 +838,16 @@ img {
   .responsive .wrapper .response-design .text5 {
     color: #5e5e5e;
     padding: 10px 0; }
+
+.contact-us-page .navigation .navbar {
+  position: unset; }
+  .contact-us-page .navigation .navbar .links-items .links .items {
+    color: #707070; }
+
+.contact-us-page .navigation .navbar.sticky {
+  position: fixed; }
+  .contact-us-page .navigation .navbar.sticky .links-items .links .items {
+    color: #000; }
 
 .contact-us {
   padding: 50px 0; }
@@ -924,6 +954,16 @@ img {
             border-bottom: 2px solid #fff; }
 
 /*----------  Container menu iso-gallery  ----------*/
+.porfolio-page .navigation .navbar {
+  position: unset; }
+  .porfolio-page .navigation .navbar .links-items .links .items {
+    color: #707070; }
+
+.porfolio-page .navigation .navbar.sticky {
+  position: fixed; }
+  .porfolio-page .navigation .navbar.sticky .links-items .links .items {
+    color: #000; }
+
 .container_menu_iso {
   display: -webkit-box;
   display: -ms-flexbox;

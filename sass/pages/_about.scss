@@ -1,3 +1,17 @@
+
+.about-us-page .navigation .navbar {
+   position: unset;
+   .links-items .links .items {
+      color: $color-dark-brown;
+  }
+}
+
+.about-us-page .navigation .navbar.sticky {
+   position : fixed;
+   .links-items .links .items {
+      color: #000;
+  }
+}
 .we-are  {
    .wrapper{
       padding: 60px 0;

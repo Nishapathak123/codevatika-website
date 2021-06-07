@@ -1,4 +1,17 @@
 /*----------  Container menu iso-gallery  ----------*/
+.porfolio-page .navigation .navbar {
+  position: unset;
+  .links-items .links .items {
+     color: $color-dark-brown;
+ }
+}
+
+.porfolio-page .navigation .navbar.sticky {
+  position : fixed;
+  .links-items .links .items {
+     color: #000;
+ }
+}
 .container_menu_iso {
     display: -webkit-box;
     display: -ms-flexbox;
