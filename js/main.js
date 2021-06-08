@@ -45,10 +45,16 @@ $('.testimonial-slider').slick({
     autoplaSpeed:2000,
     infinite:true
 });
+var burger = document.querySelector('.hamburger');
+var navitems = document.querySelector('.links-items');
 
 
 
-
+burger.addEventListener('click', function() {
+  navitems.classList.toggle('open');
+  burger.classList.toggle('isactive');
+  document.body.classList.toggle('open-nav');
+});
 
 
 

@@ -1,10 +1,11 @@
-.contact-us-page .navigation .navbar{
+.contact-page .navigation .navbar {
     position: unset;
     .links-items .links .items {
-        color: $color-dark-brown;
-    }
-}
-.about-us-page .navigation .navbar.sticky {
+       color: $color-dark-brown;
+   }
+ }
+ 
+ .contact-page .navigation .navbar.sticky {
     position : fixed;
     .links-items .links .items {
        color: #000;

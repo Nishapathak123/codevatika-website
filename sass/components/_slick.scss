@@ -61,10 +61,24 @@
         bottom: -40px;
         font-size: 15px;
         margin-bottom: 0px;
+        @include media(sm) {
+            font-size: 12px;
+            
+        }
+        @include media(xs) {
+            font-size: 6px;
+            
+        }
         li {
             width: 25px;
             height: 15px;
+        
+        @include media(xs) {
+            width: 15px;
+            height: 5px;
+            
         }
+    }
     }
     .slick-dots li button:before {
         font-size: 15px;
