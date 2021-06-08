@@ -50,11 +50,5 @@ var navitems = document.querySelector('.links-items');
 
 
 
-burger.addEventListener('click', function() {
-  navitems.classList.toggle('open');
-  burger.classList.toggle('isactive');
-  document.body.classList.toggle('open-nav');
-});
-
 
 

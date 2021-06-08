@@ -1,5 +1,8 @@
 .services-page .navigation .navbar {
     position: unset;
+    .hamburger .line{
+        background: $color-green;
+    }
     .links-items .links .items {
        color: $color-dark-brown;
    }

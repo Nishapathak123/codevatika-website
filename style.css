@@ -216,6 +216,9 @@ p {
 @media only screen and (min-width: 768px) {
   .hamburger {
     display: none; } }
+.navigation .navbar.sticky .line {
+  background: #5cbb47; }
+
 .navigation .navbar.sticky {
   background: #fff;
   position: fixed;
@@ -295,7 +298,7 @@ footer {
     @media (max-width: 1024px) {
       footer .wrapper {
         grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 500px) {
+    @media (max-width: 767px) {
       footer .wrapper {
         grid-template-columns: repeat(1, 1fr); } }
     footer .wrapper .logo-image img {
@@ -411,22 +414,68 @@ footer {
   grid-template-columns: repeat(2, 1fr); }
   @media (max-width: 1024px) {
     .welcome .wrapper .welcome-text {
-      grid-template-columns: repeat(1, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) {
+    .welcome .wrapper .welcome-text {
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      width: 100%; } }
   .welcome .wrapper .welcome-text .about-us {
     padding: 0px 30px 0 0; }
+    @media (max-width: 500px) {
+      .welcome .wrapper .welcome-text .about-us {
+        padding-bottom: 50px;
+        padding-right: 0;
+        padding: 0 20px 50px 20px; } }
     .welcome .wrapper .welcome-text .about-us p {
       padding-bottom: 20px;
       color: #5e5e5e; }
+      @media (max-width: 767px) {
+        .welcome .wrapper .welcome-text .about-us p {
+          font-size: 15px; } }
+      @media (max-width: 1024px) {
+        .welcome .wrapper .welcome-text .about-us p {
+          font-size: 17px; } }
+    @media (max-width: 500px) {
+      .welcome .wrapper .welcome-text .about-us .btn-dark {
+        font-size: 12px;
+        padding: 10px 20px; } }
   .welcome .wrapper .welcome-text .about-image {
     padding-top: 50px; }
     .welcome .wrapper .welcome-text .about-image .layer {
       height: 335px;
       border: 10px solid #6ddd54;
       margin-left: 80px; }
+      @media (max-width: 1200px) {
+        .welcome .wrapper .welcome-text .about-image .layer {
+          height: 300px; } }
+      @media (max-width: 1024px) {
+        .welcome .wrapper .welcome-text .about-image .layer {
+          height: 350px; } }
+      @media (max-width: 767px) {
+        .welcome .wrapper .welcome-text .about-image .layer {
+          height: 500px; } }
+      @media (max-width: 500px) {
+        .welcome .wrapper .welcome-text .about-image .layer {
+          height: 200px;
+          width: 76%;
+          margin-left: 60px; } }
       .welcome .wrapper .welcome-text .about-image .layer .us-image {
         position: relative;
         bottom: 50px;
         right: 47px; }
+        @media (max-width: 1200px) {
+          .welcome .wrapper .welcome-text .about-image .layer .us-image img {
+            height: 270px; } }
+        @media (max-width: 1024px) {
+          .welcome .wrapper .welcome-text .about-image .layer .us-image img {
+            height: 330px; } }
+        @media (max-width: 767px) {
+          .welcome .wrapper .welcome-text .about-image .layer .us-image img {
+            height: 500px; } }
+        @media (max-width: 500px) {
+          .welcome .wrapper .welcome-text .about-image .layer .us-image img {
+            height: 200px; } }
 
 .services {
   padding: 40px 0;
@@ -527,6 +576,12 @@ footer {
   .testimonials .wrapper {
     max-width: 1024px;
     padding: 0 35px; }
+    @media (max-width: 767px) {
+      .testimonials .wrapper {
+        padding: 0 70px; } }
+    @media (max-width: 500px) {
+      .testimonials .wrapper {
+        padding: 0 80px; } }
   .testimonials .test-text {
     color: #707070; }
   .testimonials .testimonials-images {
@@ -555,6 +610,10 @@ footer {
         .testimonials .testimonials-images .text2 {
           font-size: 20px;
           padding: 20px 60px 0 60px; } }
+      @media (max-width: 500px) {
+        .testimonials .testimonials-images .text2 {
+          font-size: 16px;
+          padding: 20px 20px 0 20px; } }
     .testimonials .testimonials-images .text3 {
       color: #777;
       padding: 30px 80px 50px 80px; }
@@ -562,6 +621,10 @@ footer {
         .testimonials .testimonials-images .text3 {
           font-size: 15px;
           padding: 30px 40px; } }
+      @media (max-width: 500px) {
+        .testimonials .testimonials-images .text3 {
+          font-size: 11px;
+          padding: 30px 10px; } }
 
 .works {
   padding: 20px 0; }
@@ -831,6 +894,8 @@ img {
 
 .about-us-page .navigation .navbar {
   position: unset; }
+  .about-us-page .navigation .navbar .hamburger .line {
+    background: #5cbb47; }
   .about-us-page .navigation .navbar .links-items .links .items {
     color: #707070; }
 
@@ -943,6 +1008,8 @@ img {
 
 .services-page .navigation .navbar {
   position: unset; }
+  .services-page .navigation .navbar .hamburger .line {
+    background: #5cbb47; }
   .services-page .navigation .navbar .links-items .links .items {
     color: #707070; }
 
@@ -996,6 +1063,8 @@ img {
 
 .contact-page .navigation .navbar {
   position: unset; }
+  .contact-page .navigation .navbar .hamburger .line {
+    background: #5cbb47; }
   .contact-page .navigation .navbar .links-items .links .items {
     color: #707070; }
 
@@ -1110,6 +1179,8 @@ img {
 
 .our-worker-page .navigation .navbar {
   position: unset; }
+  .our-worker-page .navigation .navbar .hamburger .line {
+    background: #5cbb47; }
   .our-worker-page .navigation .navbar .links-items .links .items {
     color: #707070; }
 
