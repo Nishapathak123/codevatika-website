@@ -526,3 +526,66 @@
     transform: translate(-50%, -50%);
     text-align : center;
  }
+ .scrolls{
+     padding: 20px;
+     .wrapper{
+        
+            position: relative;
+             .top{
+                 position: fixed;
+                 width: 70px;
+                 height: 70px;
+                 background: green;
+                 border-radius: 50%;
+                 position: fixed;
+                    color: $color-white;
+                    bottom: 40px;
+                    right: 0px;
+                    z-index: 100000;
+                    font-size: 20px;
+                    cursor: pointer;
+                    visibility: hidden;
+                    opacity: 0;
+                
+                h4{
+                    position: fixed;
+                    color: $color-white;
+                    bottom: 65px;
+                    right: 20px;
+               
+                    font-size: 20px;
+                }
+             }
+             
+         }
+     }
+     .for-scroll{
+        height: 0px;
+      }
+      
+      .scroll-top {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 100;
+        background-color: $color-green;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+      }
+      .scroll-top:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      
+      .scroll-top{
+        opacity: 0;
+        transition: opacity 750ms ease;
+      }
+      
+      .is-hide {
+        pointer-events: none;
+      }

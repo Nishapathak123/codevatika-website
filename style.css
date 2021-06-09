@@ -156,8 +156,8 @@ p {
       .navigation .navbar .wrapper .links-items .items {
         cursor: pointer;
         color: #fff;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
         color: #fff;
         margin: 0px;
         font-size: 13px;
@@ -311,6 +311,9 @@ footer {
       font-size: 10px; }
     footer .wrapper .services-links {
       padding-left: 60px; }
+      @media (max-width: 767px) {
+        footer .wrapper .services-links {
+          padding-left: 0; } }
       @media (max-width: 500px) {
         footer .wrapper .services-links {
           padding-left: 0; } }
@@ -750,12 +753,65 @@ footer {
   transform: translate(-50%, -50%);
   text-align: center; }
 
+.scrolls {
+  padding: 20px; }
+  .scrolls .wrapper {
+    position: relative; }
+    .scrolls .wrapper .top {
+      position: fixed;
+      width: 70px;
+      height: 70px;
+      background: green;
+      border-radius: 50%;
+      position: fixed;
+      color: #fff;
+      bottom: 40px;
+      right: 0px;
+      z-index: 100000;
+      font-size: 20px;
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0; }
+      .scrolls .wrapper .top h4 {
+        position: fixed;
+        color: #fff;
+        bottom: 65px;
+        right: 20px;
+        font-size: 20px; }
+
+.for-scroll {
+  height: 0px; }
+
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  background-color: #5cbb47;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center; }
+
+.scroll-top:hover {
+  cursor: pointer;
+  opacity: 0.7; }
+
+.scroll-top {
+  opacity: 0;
+  transition: opacity 750ms ease; }
+
+.is-hide {
+  pointer-events: none; }
+
 .btn {
   display: inline-block;
   background: #5cbb47;
   cursor: pointer;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 25px;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.4);
   padding: 15px 38px;
@@ -897,7 +953,8 @@ img {
   .about-us-page .navigation .navbar .hamburger .line {
     background: #5cbb47; }
   .about-us-page .navigation .navbar .links-items .links .items {
-    color: #707070; }
+    color: #707070;
+    font-weight: 600; }
 
 .about-us-page .navigation .navbar.sticky {
   position: fixed; }
@@ -1011,7 +1068,8 @@ img {
   .services-page .navigation .navbar .hamburger .line {
     background: #5cbb47; }
   .services-page .navigation .navbar .links-items .links .items {
-    color: #707070; }
+    color: #707070;
+    font-weight: 600; }
 
 .services-page .navigation .navbar.sticky {
   position: fixed; }
@@ -1066,7 +1124,8 @@ img {
   .contact-page .navigation .navbar .hamburger .line {
     background: #5cbb47; }
   .contact-page .navigation .navbar .links-items .links .items {
-    color: #707070; }
+    color: #707070;
+    font-weight: 600; }
 
 .contact-page .navigation .navbar.sticky {
   position: fixed; }
@@ -1182,7 +1241,8 @@ img {
   .our-worker-page .navigation .navbar .hamburger .line {
     background: #5cbb47; }
   .our-worker-page .navigation .navbar .links-items .links .items {
-    color: #707070; }
+    color: #707070;
+    font-weight: 600; }
 
 .our-worker-page .navigation .navbar.sticky {
   position: fixed; }

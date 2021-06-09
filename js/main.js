@@ -45,8 +45,7 @@ $('.testimonial-slider').slick({
     autoplaSpeed:2000,
     infinite:true
 });
-var burger = document.querySelector('.hamburger');
-var navitems = document.querySelector('.links-items');
+
 
 
 

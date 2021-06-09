@@ -27,6 +27,9 @@ footer {
         }
         .services-links {
             padding-left: 60px;
+            @include media(sm) {
+               padding-left: 0;
+            }
             @include media(xs) {
                padding-left: 0;
             }
