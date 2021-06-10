@@ -114,7 +114,7 @@ p {
     .navigation .navbar .wrapper .links-items {
       display: flex;
       align-items: center; }
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         .navigation .navbar .wrapper .links-items {
           position: fixed;
           flex-direction: column;
@@ -130,7 +130,7 @@ p {
           transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.4s; } }
       .navigation .navbar .wrapper .links-items .links {
         margin: 0 10px; }
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
           .navigation .navbar .wrapper .links-items .links {
             width: 100%;
             border-bottom: 1px solid rgba(61, 97, 19, 0.2);
@@ -148,7 +148,7 @@ p {
             .navigation .navbar .wrapper .links-items .links .btn:hover {
               background: #fff;
               color: #5cbb47; } }
-  @media (max-width: 767px) and (max-width: 1024px) {
+  @media (max-width: 1024px) and (max-width: 1024px) {
     .navigation .navbar .wrapper .links-items .links .btn {
       font-size: 10px;
       padding: 10px 18px; } }
@@ -166,7 +166,7 @@ p {
         transition: 0.3s color ease; }
         .navigation .navbar .wrapper .links-items .items:hover {
           color: #6ddd54; }
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
           .navigation .navbar .wrapper .links-items .items {
             font-size: 25px;
             color: #5cbb47;
@@ -175,14 +175,14 @@ p {
           .navigation .navbar .wrapper .links-items .items {
             margin: 0 5px;
             font-size: 13px; } }
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
           .navigation .navbar .wrapper .links-items .items {
             margin: 0 0; } }
         .navigation .navbar .wrapper .links-items .items:hover {
           color: #5cbb47; }
           .navigation .navbar .wrapper .links-items .items:hover:hover path {
             fill: #5cbb47; }
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
               .navigation .navbar .wrapper .links-items .items:hover:hover path {
                 font-size: 25px;
                 color: #5cbb47;
@@ -213,7 +213,7 @@ p {
 .hamburger.isactive .line:nth-child(3) {
   transform: translateY(-13px) rotate(-45deg); }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .hamburger {
     display: none; } }
 .navigation .navbar.sticky .line {
@@ -231,7 +231,7 @@ p {
 .navigation .navbar .wrapper ul.open {
   right: 0; }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .background-overlay.opacity {
     opacity: 1; } }
 .banner {
@@ -256,14 +256,23 @@ p {
     @media (max-width: 767px) {
       .banner .banner-text {
         width: 80%; } }
-    .banner .banner-text h2 span {
-      color: #fff; }
+    .banner .banner-text h2 {
+      line-height: 55px; }
       @media (max-width: 1024px) {
-        .banner .banner-text h2 span {
-          font-size: 38px; } }
+        .banner .banner-text h2 {
+          line-height: 40px; } }
       @media (max-width: 767px) {
-        .banner .banner-text h2 span {
-          font-size: 25px; } }
+        .banner .banner-text h2 {
+          line-height: 25px; } }
+      .banner .banner-text h2 span {
+        color: #fff; }
+        @media (max-width: 1024px) {
+          .banner .banner-text h2 span {
+            font-size: 38px; } }
+        @media (max-width: 767px) {
+          .banner .banner-text h2 span {
+            font-size: 25px;
+            line-height: 25px; } }
     .banner .banner-text p {
       color: #f7f7f7;
       font-size: 22px;
@@ -272,7 +281,8 @@ p {
       @media (max-width: 767px) {
         .banner .banner-text p {
           font-size: 17px;
-          padding-right: 100px; } }
+          padding-right: 100px;
+          line-height: 24px; } }
       @media (max-width: 500px) {
         .banner .banner-text p {
           font-size: 17px;
@@ -826,14 +836,16 @@ footer {
   color: #fff;
   cursor: pointer;
   outline: none;
-  border: 3px solid #333;
-  transition-duration: .1s;
+  transition: 0.25s ease-in-out;
+  animation: slideDown .25s linear;
   border-radius: 50%;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color;
   line-height: 50px;
   text-align: center;
-  display: none; }
+  opacity: 0;
+  visibility: hidden; }
+  #for-scroll.visible {
+    opacity: 1;
+    visibility: visible; }
 
 #for-scroll:hover,
 #for-scroll:focus {

@@ -1,97 +1,35 @@
 var navbar = document.querySelector(".navbar");
+var burger = document.querySelector('.hamburger');
+var navitems = document.querySelector('.links-items');
+var forscroll = document.querySelector("#for-scroll");
 
+//sticky header
 window.addEventListener('scroll', function() {
   if(window.scrollY >= 200) {
     navbar.classList.add('sticky');
+    forscroll.classList.add('visible');
   }
   else {
     navbar.classList.remove('sticky');
+    forscroll.classList.remove('visible');
   }
 })
 
-var burger = document.querySelector('.hamburger');
-var navitems = document.querySelector('.links-items');
 
+//hamburger
 burger.addEventListener('click', function() {
   navitems.classList.toggle('open');
   burger.classList.toggle('isactive');
   document.body.classList.toggle('open-nav');
 });
 
-// const pageTopBtn = document.getElementById('js-scroll-top');
-
-// window.addEventListener("scroll", () => {
-//   const currentY = window.pageYOffset;
-//   if ( currentY > 400){
-//     setTimeout(function(){
-//       pageTopBtn.style.opacity = 1;
-//     }, 1);
-//     pageTopBtn.classList.remove('is-hide');
-//   } else {
-//     setTimeout(function(){
-//       pageTopBtn.style.opacity = 0;
-//     }, 1);
-//     pageTopBtn.classList.add('is-hide');
-//   }
-// });
+//scroll to top
+forscroll.addEventListener('click', function(){
+  window.scrollTo(0,0);
+});
 
 
-// scrollTop('js-scroll-top', 550); 
-
-// function scrollTop(el, duration) {
-//   const target = document.getElementById(el);
-//   target.addEventListener('click', function() {
-//     let currentY = window.pageYOffset; 
-//     let step = duration/currentY > 1 ? 10 : 100; 
-//     let timeStep = duration/currentY * step; 
-//     let intervalId = setInterval(scrollUp, timeStep);
-  
-
-//     function scrollUp(){
-//       currentY = window.pageYOffset;
-//       if(currentY === 0) {
-//           clearInterval(intervalId); 
-//       } else {
-//           scrollBy( 0, -step ); 
-//       }
-//     }
-//   });
-// }
 
 
-// scrollTop('js-scroll-top', 150); 
 
-// function scrollTop(el, duration) {
-//   const target = document.getElementById(el);
-//   target.addEventListener('click', function() {
-//     let currentY = window.pageYOffset; 
-//     let step = duration/currentY > 1 ? 10 : 4000; 
-//     let timeStep = duration/currentY * step; 
-//     let intervalId = setInterval(scrollUp, timeStep);
-    
 
-//     function scrollUp(){
-//       currentY = window.pageYOffset;
-//       if(currentY === 0) {
-//           clearInterval(intervalId); 
-          
-//       } else {
-//           scrollBy( 0, -step ); 
-//       }
-//     }
-//   });
-// }
-
-$(window).scroll(function()
-  {
-    if($(window).scrollTop() > 300)
-    {
-      $("a").fadeIn();
-    }
-    else{
-      $("a").fadeout();
-    }
-  });
-  $("a").click(function(){
-    $("html").animate({scrollTop:0},1000);
-  });

@@ -593,14 +593,18 @@
          color: $color-white;
          cursor: pointer;
          outline: none;
-         border: 3px solid #333;
-         transition-duration: .1s;
+         transition : 0.25s ease-in-out;
+         animation : slideDown .25s linear;
          border-radius: 50%;
-         transition-timing-function: ease-in-out;
-         transition-property: background-color, color;
          line-height: 50px;
          text-align: center;
-         display: none;
+         opacity: 0;
+         visibility: hidden;
+         
+         &.visible {
+             opacity: 1;
+             visibility: visible;
+         }
      }
      #for-scroll:hover,
      #for-scroll:focus{

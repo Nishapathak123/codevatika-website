@@ -264,7 +264,7 @@
            .links-items{
                display: flex;
                align-items: center;
-               @include media(sm) {
+               @include media(md) {
                 position: fixed;
                 flex-direction: column;
                 height: 70vh;
@@ -280,7 +280,7 @@
                }
                .links{
                margin: 0 10px;
-               @include media(sm) {
+               @include media(md) {
                 width: 100%;
                 border-bottom: 1px solid rgba(61, 97, 19, 0.2);
                 padding: 20px 0;
@@ -319,7 +319,7 @@
                    &:hover{
                        color: $color-light-green;
                    }
-                   @include media(sm) {
+                   @include media(md) {
                     font-size: 25px;
                     color: $color-green;
                     text-align: center;
@@ -335,7 +335,7 @@
                     font-size: 13px;
                     
                 }
-                @include media(sm) {
+                @include media(md) {
                    margin: 0 0;
                     
                 }
@@ -344,7 +344,7 @@
 
                     &:hover path {
                         fill: $color-green;
-                        @include media(sm) {
+                        @include media(md) {
                         font-size: 25px;
                         color: $color-green;
                         text-align: center;
@@ -394,7 +394,7 @@
             }
         }
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1025px) {
         .hamburger {
             display: none;
         }
@@ -421,7 +421,7 @@
     right: 0;
 }
 
-@include media(sm) {
+@include media(md) {
     .background-overlay.opacity {
         opacity: 1;
     }
@@ -454,16 +454,26 @@
             
         }
         h2{
+            line-height: 55px;
+            @include media(md) {
+                line-height: 40px;
+               
+            }
+            @include media(sm) {
+                line-height: 25px;
+               
+            }
             
             span{
+                
             color: $color-white;
             @include media(md) {
                 font-size: 38px;
-                
+               
             }
             @include media(sm) {
                 font-size: 25px;
-                
+                line-height: 25px;
             }
         }
     }
@@ -475,6 +485,7 @@
             @include media(sm) {
                 font-size: 17px;
                 padding-right: 100px;
+                line-height: 24px;
             }
             @include media(xs) {
                 font-size: 17px;
