@@ -46,7 +46,22 @@ $('.testimonial-slider').slick({
     infinite:true
 });
 
+// var forscroll = document.querySelector("#for-scroll");
 
+// window.addEventListener('scroll', scrollfunction);
+// function scrollfunction(){
+//   if (window.pageYOffset > 300){
+//     forscroll.style.display = "block";
+//   }
+//   else{
+//     forscroll.style.display = "none";
+//   }
+// }
+// forscroll.addEventListener('click', forscroll);
+// function forscroll(){
+//   window.scrollTo(0,0);
+// }
+  
 
 
 

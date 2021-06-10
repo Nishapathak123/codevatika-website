@@ -47,6 +47,9 @@
             text-align: center;
             h2{
                 color: $color-dark-brown;
+                @include media(sm) {
+                    font-size: 35px;
+                }
             }
         }
         .welcome-text{
@@ -154,6 +157,9 @@
             h2{
                 color: $color-light-black;
                 padding: 30px 0;
+                @include media(sm) {
+                    font-size: 35px;
+                }
             }
         }
             .items{
@@ -212,7 +218,10 @@
            text-align: center;
            padding: 20px 0 60px;
            h2{
-            color: $color-light-black;  
+            color: $color-light-black; 
+            @include media(sm) {
+                font-size: 35px;
+            } 
            }
         }
         .blogs-image-text{
@@ -258,6 +267,9 @@
                 h2{
                     color: $color-dark-brown;
                     padding-bottom: 10px;
+                    @include media(sm) {
+                        font-size: 35px;
+                    }
                 }
             }
             .logo-slider{
@@ -300,10 +312,15 @@
         }
         }
         .test-text{
+        h2{
             color: $color-dark-brown;
+            @include media(sm) {
+               font-size: 35px;
+                
+            }
             
         }
-        
+    }
         .testimonials-images{
           visibility: visible;
            margin-top: 80px;
@@ -373,6 +390,9 @@
                text-align: center;
                h2{
                    color: $color-dark-brown;
+                   @include media(sm) {
+                    font-size: 35px;
+                }
                }
            }
             .our-works{
@@ -401,13 +421,16 @@
 .hr-theme-slash-2 {
     display: flex;
     text-align: center;
-    
+    width: 100%;
     .hr-line {
       position: relative;
       width: 10%;
       margin: 15px;
       left: 434px;
       border-bottom: 4px solid $color-green;
+      @include media(sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
     }
     .hr-icon {
       position: relative;
@@ -559,33 +582,38 @@
              
          }
      }
-     .for-scroll{
-        height: 0px;
-      }
-      
-      .scroll-top {
-        position: fixed;
-        right: 25px;
-        bottom: 25px;
-        z-index: 100;
-        background-color: $color-green;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        color: #fff;
-        line-height: 50px;
-        text-align: center;
-      }
-      .scroll-top:hover {
-        cursor: pointer;
-        opacity: 0.7;
-      }
-      
-      .scroll-top{
-        opacity: 0;
-        transition: opacity 750ms ease;
-      }
-      
-      .is-hide {
-        pointer-events: none;
-      }
+     #for-scroll{
+         position: fixed;
+         bottom: 40px;
+         right: 40px;
+         font-size: 26px;
+         width: 50px;
+         height: 50px;
+         background: $color-green;
+         color: $color-white;
+         cursor: pointer;
+         outline: none;
+         border: 3px solid #333;
+         transition-duration: .1s;
+         border-radius: 50%;
+         transition-timing-function: ease-in-out;
+         transition-property: background-color, color;
+         line-height: 50px;
+         text-align: center;
+         display: none;
+     }
+     #for-scroll:hover,
+     #for-scroll:focus{
+        
+         background: $color-light-black;
+         color: $color-white;
+     }
+
+
+
+
+
+
+
+
+

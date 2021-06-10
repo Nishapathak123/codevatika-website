@@ -22,22 +22,54 @@
       padding: 60px 0;
       display: grid;
       grid-template-columns: repeat(2,60% 40%);
+      @include media(sm) {
+         grid-template-columns: repeat(1, 1fr);
+        
+         
+     }
       .we-are-text{
          padding: 0 60px 0 0;
+         @include media(sm) {
+            padding-right: 0;
+        }
          h1{
             color: $color-green;
+            font-size: 35px;
+            @include media(sm) {
+               text-align: center;
+           }
          }
          p{
             padding: 10px 0;
             color: $color-light-black;
+            @include media(md) {
+               font-size: 15px;
+             }
+             @include media(sm) {
+               font-size: 14px;
+               padding: 0 10px;
+           }
          }
       }
       .we-are-images{
+         @include media(sm) {
+            padding-top: 25px;
+        }
+         img{
          display: block;
          width: 100%;
+         @include media(md) {
+            height: 400px;
+           
+            
+        }
+         @include media(sm) {
+            height: 400px;
+            width: 100%;
+        }
       }
    }
-   
+} 
 }
 .mission{
    padding: 0 0 30px 0;
@@ -45,6 +77,9 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
+      @include media(sm) {
+         grid-template-columns: repeat(1, 1fr); 
+     }
       .our-mission{
          padding-left: 20px;
          h1{
@@ -112,18 +147,37 @@
    }
 }
 .why-choose{
+   
    .icon{
       padding-right: 10px;
+     
+      
       .icon-co{
-         width: 80px;
-         height: 80px;
+         width: 70px;
+         height: 70px;
+         line-height: 55px;
+       
+         text-align: center;
          background: $color-light-green;
+         @include media(sm) {
+            border-right: unset;
+            padding-right: 0;
+            width: 50px;
+            height: 50px;
+            line-height: 25px;
+            margin: 0;
+            text-align: center;
+            
+        }
          i{
             font-size: 40px;
-            position: relative;
-            bottom: 13px;
+            
+            
             color: $color-white;
-            left: 21px;
+            @include media(sm) {
+               font-size: 30px;
+           }
+            
          }
       }
    }
@@ -133,38 +187,64 @@
    .wrapper{
       padding: 20px 0;
       .why-choose-text{
-         text-align: center;
+         
          padding-bottom: 20px;
          h2{
             color: $color-dark-brown;
+            @include media(sm) {
+               font-size: 35px;
+               text-align: center;
+           }
          }
       }
       .changer{
          padding-left: 20px;
+        
          h1{
             color: $color-green;
          }
-         p{
+         .text5{
             color: $color-light-black;
             
             padding-bottom: 15px;
+            @include media(sm) {
+               font-size: 13px;
+           }
          }
       }
       .chooes{
          display: grid;
          grid-template-columns: repeat(2,1fr);
          padding-top: 30px;
+         @include media(sm) {
+            grid-template-columns: repeat(1, 1fr);
+            
+            
+           
+        }
 
          .chooses-us{
             display: flex;
             border-right: 1px solid $color-light-green;
             padding-right: 64px;
-         }
+            @include media(sm) {
+               border-right: unset;
+               padding-right: 0;
+               padding-bottom: 10px;
+              
                
+           }
+         }
+           .go{  
             .chooses-right{
                display: flex;
                padding-left: 75px;
+               @include media(sm) {
+                 padding-bottom: 10px;
+                  padding-left: 0;
+              }
             }
+         }
          }
       }
    }
