@@ -1352,6 +1352,9 @@ img {
     padding-bottom: 60px; }
     .contact-us .wrapper .contacts h2 {
       color: #707070; }
+      @media (max-width: 500px) {
+        .contact-us .wrapper .contacts h2 {
+          font-size: 35px; } }
     .contact-us .wrapper .contacts .text3 {
       color: #5e5e5e; }
   .contact-us .wrapper .contact-info {
@@ -1360,6 +1363,10 @@ img {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     max-width: 900px;
     margin: auto; }
+    @media (max-width: 767px) {
+      .contact-us .wrapper .contact-info {
+        grid-template-columns: repeat(1, 1fr);
+        box-shadow: none; } }
     .contact-us .wrapper .contact-info .contact-infoos {
       padding: 40px; }
       .contact-us .wrapper .contact-info .contact-infoos .contact-touch {
@@ -1383,6 +1390,9 @@ img {
     .contact-us .wrapper .contact-info .contact-form {
       padding: 40px;
       background: #5cbb47; }
+      @media (max-width: 767px) {
+        .contact-us .wrapper .contact-info .contact-form {
+          margin-top: 20px; } }
       .contact-us .wrapper .contact-info .contact-form h1 {
         color: #fff;
         padding-bottom: 20px; }
@@ -1427,8 +1437,11 @@ img {
             background: white;
             color: #5cbb47; }
       .contact-us .wrapper .contact-info .contact-form .form-dir {
-        max-width: 100%;
-        padding-bottom: 20px; }
+        width: 100%;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; }
         .contact-us .wrapper .contact-info .contact-form .form-dir ::placeholder {
           color: #fff; }
         .contact-us .wrapper .contact-info .contact-form .form-dir input {
@@ -1436,7 +1449,7 @@ img {
           border: none;
           height: 40px;
           font-size: 14px;
-          width: 44%;
+          width: 100%;
           margin: 5px 10px;
           max-width: 100%;
           padding: 10px;
@@ -1448,6 +1461,10 @@ img {
           outline: none; }
           .contact-us .wrapper .contact-info .contact-form .form-dir input:focus {
             border-bottom: 2px solid #fff; }
+          @media (max-width: 1024px) {
+            .contact-us .wrapper .contact-info .contact-form .form-dir input {
+              width: 100%;
+              padding: 10px 10px 30px 10px; } }
 
 .our-worker-page .navigation .navbar {
   position: unset; }
