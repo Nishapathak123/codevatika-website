@@ -2,6 +2,11 @@ var navbar = document.querySelector(".navbar");
 var burger = document.querySelector('.hamburger');
 var navitems = document.querySelector('.links-items');
 var forscroll = document.querySelector("#for-scroll");
+var requestaquote = document.querySelector('.btn');
+// var button = document.querySelector('.btn');
+var searchmodal = document.querySelector('#form-list');
+var close = document.querySelector('.close-form-list');
+var text = document.querySelector('.text');
 
 //sticky header
 window.addEventListener('scroll', function() {
@@ -27,9 +32,13 @@ burger.addEventListener('click', function() {
 forscroll.addEventListener('click', function(){
   window.scrollTo(0,0);
 });
+requestaquote.addEventListener('click', function() {
+  searchmodal.classList.add('fadein')
 
-
-
+})
+close.addEventListener('click', function(){
+  searchmodal.classList.remove('fadein')
+})
 
 
 

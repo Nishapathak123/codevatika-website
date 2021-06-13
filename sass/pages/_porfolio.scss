@@ -27,7 +27,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: 4rem 0;
+    margin: 4rem 15px;
   }
   
   .container_menu_iso .menu_iso li {
@@ -86,6 +86,15 @@
   .cent.isotope-item {
       width: 22%;
       margin: 15px;
+      @include media(sm) {
+        width: 40%;
+       text-align: center;
+       }
+      @include media(xs) {
+        width: 60%;
+        
+       }
+    
   }
   
  .iso-container {
@@ -103,17 +112,17 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .img_iso {
-      height: 180px;
-      width: 160px;
+      height: 200px;
+      width: 350px;
     }
   }
   
   @media screen and (max-width: 425px) {
     .img_iso {
       height: 250px;
-      width: 250px;
+      width: 400px;
     }
   }
   
